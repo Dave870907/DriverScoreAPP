@@ -24,7 +24,6 @@
 		01F551CD24E12EE4002E0AF3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F551CC24E12EE3002E0AF3 /* CoreLocation.framework */; };
 		01F551CF24E12F08002E0AF3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F551CE24E12F08002E0AF3 /* MapKit.framework */; };
 		01F551D124E136BF002E0AF3 /* mapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F551D024E136BF002E0AF3 /* mapView2.swift */; };
-		01F5521B24E66E24002E0AF3 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5521A24E66E24002E0AF3 /* UnitExtensions.swift */; };
 		01F5521D24E672C6002E0AF3 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5521C24E672C6002E0AF3 /* FormatDisplay.swift */; };
 		01F5521F24E67352002E0AF3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5521E24E67352002E0AF3 /* LocationManager.swift */; };
 		01F5522124E67990002E0AF3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5522024E67990002E0AF3 /* CoreDataStack.swift */; };
@@ -73,7 +72,6 @@
 		01F551CC24E12EE3002E0AF3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		01F551CE24E12F08002E0AF3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		01F551D024E136BF002E0AF3 /* mapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView2.swift; sourceTree = "<group>"; };
-		01F5521A24E66E24002E0AF3 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
 		01F5521C24E672C6002E0AF3 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		01F5521E24E67352002E0AF3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		01F5522024E67990002E0AF3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 		01F5522724E7E366002E0AF3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				01F5521A24E66E24002E0AF3 /* UnitExtensions.swift */,
 				01F5521C24E672C6002E0AF3 /* FormatDisplay.swift */,
 				01F5521E24E67352002E0AF3 /* LocationManager.swift */,
 				01F5522324E686E6002E0AF3 /* MulticolorPolyline.swift */,
@@ -359,7 +356,6 @@
 				01F5522624E7E284002E0AF3 /* StoryboardSupport.swift in Sources */,
 				01D5D90624EFB99E0085EC7D /* NewRunViewController.swift in Sources */,
 				01F5522424E686E6002E0AF3 /* MulticolorPolyline.swift in Sources */,
-				01F5521B24E66E24002E0AF3 /* UnitExtensions.swift in Sources */,
 				01F5521F24E67352002E0AF3 /* LocationManager.swift in Sources */,
 				01F5522124E67990002E0AF3 /* CoreDataStack.swift in Sources */,
 			);
@@ -466,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -520,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -537,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54AYTMT83A;
 				INFOPLIST_FILE = project1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54AYTMT83A;
 				INFOPLIST_FILE = project1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

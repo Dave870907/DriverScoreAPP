@@ -66,6 +66,7 @@ class NewRunViewController: UIViewController {
     stopButton.isHidden = false
     mapView.removeOverlays(mapView.overlays)
     mapView.showsUserLocation = true
+//    locationManager.desiredAccuracy = kCLLocationAccuracyBest
     seconds = 0
     distance = Measurement(value: 0, unit: UnitLength.meters)
     locationList.removeAll()
@@ -91,11 +92,12 @@ class NewRunViewController: UIViewController {
   }
   
   private func updateDisplay() {
+    
     let formattedDistance = FormatDisplay.distance(distance)
     let formattedTime = FormatDisplay.time(seconds)
     let formattedPace = FormatDisplay.pace(distance: distance,
                                            seconds: seconds,
-                                           outputUnit: UnitSpeed.minutesPerMile)
+                                           outputUnit: UnitSpeed.kilometersPerHour)
     
     distanceLabel.text = "Distance:  \(formattedDistance)"
     timeLabel.text = "Time:  \(formattedTime)"
