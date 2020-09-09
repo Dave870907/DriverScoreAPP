@@ -10,6 +10,7 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 class RunDetailsViewController: UIViewController {
   
@@ -41,10 +42,32 @@ class RunDetailsViewController: UIViewController {
     dateLabel.text = formattedDate
     timeLabel.text = "Time:  \(formattedTime)"
     paceLabel.text = "Pace:  \(formattedPace)"
+//  丟資料到coreData
+  // 用來操作 Core Data 的常數
+       let moc = (UIApplication.shared.delegate
+           as! AppDelegate).persistentContainer.viewContext
+       let EntityName = "ScoreRecord"
+       // insert
+       let ScoreRecord = NSEntityDescription.insertNewObject(
+           forEntityName: EntityName, into: moc)
+         as! ScoreRecord
+       
+       ScoreRecord.speed = formattedPace
+       ScoreRecord.time = formattedTime
+    ScoreRecord.date = formattedDate
+       
+       
+       do {
+           try moc.save()
+           print ("success")
+       } catch let error {
+           print("\(error)")
+       }
     
+//    丟完
     loadMap()
   }
-  
+ 
   private func mapRegion() -> MKCoordinateRegion? {
     guard
       let locations = run.locations,

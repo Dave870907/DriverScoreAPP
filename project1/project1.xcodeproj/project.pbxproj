@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B4668824FB9C1600EEFEAA /* ScoreRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4668624FB9C1600EEFEAA /* ScoreRecord+CoreDataClass.swift */; };
+		01B4668924FB9C1600EEFEAA /* ScoreRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4668724FB9C1600EEFEAA /* ScoreRecord+CoreDataProperties.swift */; };
+		01B4668B24FBE3F600EEFEAA /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4668A24FBE3F600EEFEAA /* History.swift */; };
+		01C3B72D2507C94A009F30BE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3B72C2507C94A009F30BE /* TableViewCell.swift */; };
+		01C3B72F2507C9E7009F30BE /* cellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3B72E2507C9E7009F30BE /* cellData.swift */; };
 		01D5D90624EFB99E0085EC7D /* NewRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D90524EFB99E0085EC7D /* NewRunViewController.swift */; };
 		01D5D90824EFBA1F0085EC7D /* RunDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D90724EFBA1F0085EC7D /* RunDetailsViewController.swift */; };
 		01F5518D24DE847A002E0AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5518C24DE847A002E0AF3 /* AppDelegate.swift */; };
@@ -49,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B4668624FB9C1600EEFEAA /* ScoreRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoreRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		01B4668724FB9C1600EEFEAA /* ScoreRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoreRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		01B4668A24FBE3F600EEFEAA /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		01C3B72C2507C94A009F30BE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		01C3B72E2507C9E7009F30BE /* cellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellData.swift; sourceTree = "<group>"; };
 		01D5D90524EFB99E0085EC7D /* NewRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRunViewController.swift; sourceTree = "<group>"; };
 		01D5D90724EFBA1F0085EC7D /* RunDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailsViewController.swift; sourceTree = "<group>"; };
 		01F5518924DE847A002E0AF3 /* project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,9 +116,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01C3B72B2507C8E3009F30BE /* history */ = {
+			isa = PBXGroup;
+			children = (
+				01B4668A24FBE3F600EEFEAA /* History.swift */,
+				01C3B72C2507C94A009F30BE /* TableViewCell.swift */,
+				01C3B72E2507C9E7009F30BE /* cellData.swift */,
+			);
+			path = history;
+			sourceTree = "<group>";
+		};
 		01F5518024DE8479002E0AF3 = {
 			isa = PBXGroup;
 			children = (
+				01B4668624FB9C1600EEFEAA /* ScoreRecord+CoreDataClass.swift */,
+				01B4668724FB9C1600EEFEAA /* ScoreRecord+CoreDataProperties.swift */,
 				01F5518B24DE847A002E0AF3 /* project1 */,
 				01F551A524DE8482002E0AF3 /* project1Tests */,
 				01F551B024DE8482002E0AF3 /* project1UITests */,
@@ -130,6 +152,7 @@
 		01F5518B24DE847A002E0AF3 /* project1 */ = {
 			isa = PBXGroup;
 			children = (
+				01C3B72B2507C8E3009F30BE /* history */,
 				01F5521524E53A3D002E0AF3 /* Runner */,
 				01F551C124DE8DDA002E0AF3 /* MapKitView */,
 				01F5518C24DE847A002E0AF3 /* AppDelegate.swift */,
@@ -343,18 +366,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B4668B24FBE3F600EEFEAA /* History.swift in Sources */,
 				01F551CA24E04400002E0AF3 /* MapView.swift in Sources */,
 				01F5519124DE847A002E0AF3 /* ViewController.swift in Sources */,
+				01C3B72F2507C9E7009F30BE /* cellData.swift in Sources */,
 				01F5519724DE847A002E0AF3 /* project1.xcdatamodeld in Sources */,
+				01C3B72D2507C94A009F30BE /* TableViewCell.swift in Sources */,
 				01D5D90824EFBA1F0085EC7D /* RunDetailsViewController.swift in Sources */,
 				01F551C324DE8DFB002E0AF3 /* MapKitView.swift in Sources */,
 				01F551D124E136BF002E0AF3 /* mapView2.swift in Sources */,
 				01F5518D24DE847A002E0AF3 /* AppDelegate.swift in Sources */,
 				01F5518F24DE847A002E0AF3 /* SceneDelegate.swift in Sources */,
 				01F5521D24E672C6002E0AF3 /* FormatDisplay.swift in Sources */,
+				01B4668824FB9C1600EEFEAA /* ScoreRecord+CoreDataClass.swift in Sources */,
 				01F551C824DFB5F8002E0AF3 /* chooseView.swift in Sources */,
 				01F5522624E7E284002E0AF3 /* StoryboardSupport.swift in Sources */,
 				01D5D90624EFB99E0085EC7D /* NewRunViewController.swift in Sources */,
+				01B4668924FB9C1600EEFEAA /* ScoreRecord+CoreDataProperties.swift in Sources */,
 				01F5522424E686E6002E0AF3 /* MulticolorPolyline.swift in Sources */,
 				01F5521F24E67352002E0AF3 /* LocationManager.swift in Sources */,
 				01F5522124E67990002E0AF3 /* CoreDataStack.swift in Sources */,
